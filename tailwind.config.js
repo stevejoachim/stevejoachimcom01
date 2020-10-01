@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
@@ -31,7 +32,9 @@ module.exports = {
     },
     typography: {
       default: {
-        css: {}, // customizations to typography styles go here
+        css: {
+          color: defaultTheme.colors.gray[900],
+        }, // customizations to typography styles go here
       },
     },
   },

@@ -1,11 +1,14 @@
 import PostList from '../components/post-list'
 import Layout from '../components/layout'
+import Container from '../components/container'
 import { getAllPosts } from '../lib/api'
 
 export default function Writing({ allPosts }) {
   return (
     <Layout>
-      <PostList posts={allPosts} />
+      <Container>
+        <PostList posts={allPosts} />
+      </Container>
     </Layout>
   )
 }
