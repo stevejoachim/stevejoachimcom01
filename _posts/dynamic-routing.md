@@ -6,6 +6,14 @@ date: '2020-03-16T05:35:07.322Z'
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue [mauris](https://example.com) rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
 
+![Some alt text here](/assets/blog/dynamic-routing/cover.jpg)
+
+$$
+a = \frac{\omega_i^2}{5+1}
+$$
+
+Here is some inline $$a_i^3=4$$ math.
+
 - Something
 - More things
 
