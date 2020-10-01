@@ -23,6 +23,22 @@ Lots of code.
 
 ```javascript
 console.log(5)
+export function getAllPosts(fields = []) {
+  const posts = getPostIds()
+    .map((id) => getPostById(id, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'))
+  return posts
+}
+```
+
+```python
+print(5)
+def getAllPosts(fields=5):
+  posts = getPostIds().map(lambda id: getPostById(id, fields))
+    # sort posts by date in descending order
+  return posts
+
 ```
 
 Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.

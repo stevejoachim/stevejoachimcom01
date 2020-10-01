@@ -1,12 +1,12 @@
 import Footer from '../components/footer'
 import Meta from '../components/meta'
-import Nav from '../components/nav'
+import Header from '../components/header'
 
 export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <Nav />
+      <Header />
       <div className="min-h-screen">
         <main>{children}</main>
       </div>

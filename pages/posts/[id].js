@@ -7,21 +7,21 @@ import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import PostBody from '../../components/post-body'
 import Link from 'next/link'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostById, getAllPosts } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post }) {
   const router = useRouter()
-  if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !post?.id) {
     return <ErrorPage statusCode={404} />
   }
+
   return (
     <Layout>
       <Container>
         <Head>
           <title>{post.title} | Steve Joachim</title>
         </Head>
-        <Header />
         <article className="mb-32">
           <PostHeader title={post.title} date={post.date} />
           <PostBody content={post.content} />
@@ -38,10 +38,10 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post = getPostById(params.id, [
     'title',
     'date',
-    'slug',
+    'id',
     'content'
   ])
   const content = await markdownToHtml(post.content || '')
@@ -57,13 +57,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPosts(['id'])
 
   return {
     paths: posts.map((post) => {
       return {
         params: {
-          slug: post.slug,
+          id: post.id,
         },
       }
     }),

@@ -1,13 +1,15 @@
 import Link from 'next/link'
+import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL, EMAIL } from '../lib/constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Intro() {
   const links = [
-    { icon: faGithub, "destination": "https://github.com/stevejoachim" },
-    { icon: faLinkedin, "destination": "https://www.linkedin.com/in/stevejoachim" },
-    { icon: faEnvelope, "destination": "https://www.linkedin.com/in/stevejoachim" }
+    { icon: faGithub, "destination": GITHUB_URL },
+    { icon: faLinkedin, "destination": LINKEDIN_URL },
+    { icon: faTwitter, "destination": TWITTER_URL },
+    { icon: faEnvelope, "destination": `mailto:${EMAIL}` }
   ]
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">

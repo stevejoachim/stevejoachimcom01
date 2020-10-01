@@ -1,11 +1,23 @@
 import Link from 'next/link'
+import Container from '../components/container'
 
 export default function Header() {
+  const navItems = [
+    { name: "Steve Joachim", destination: "/" },
+    { name: "About", destination: "/about" },
+    { name: "Writing", destination: "/writing" }
+  ]
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/">
-        <a className="hover:underline">Steve Joachim</a>
-      </Link>
-    </h2>
+    <Container>
+      <ul className="flex flex-col sm:flex-row text-xl font-bold px-5 py-2 border-b border-accent-2">
+        {navItems.map((item) => (
+          <li className="mx-6">
+            <Link href={item.destination}>
+              <a className="hover:underline">{item.name}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Container>
   )
 }
