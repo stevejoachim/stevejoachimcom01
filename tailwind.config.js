@@ -1,14 +1,14 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
+  variants: {
+    borderWidth: ['responsive', 'hover'],
+  },
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
     extend: {
       colors: {
-        'accent-1': '#FAFAFA',
+        'accent-1': '#5E2CA5',
         'accent-2': '#EAEAEA',
-        'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
       },
       spacing: {
         28: '7rem',
@@ -29,6 +29,10 @@ module.exports = {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
+      borderColor: 'black'
+    },
+    variants: {
+      borderWidth: ['responsive', 'hover', 'focus'],
     },
     typography: {
       default: {

@@ -5,7 +5,9 @@ export default function Footer() {
     <Container>
       <footer className="border-t border-accent-2">
         <p className="py-10 text-center">
-          Made with <span className="text-xl">💻</span>. <br />©️ 2020 Steve Joachim
+          Made with <span className="text-xl">💻</span>.
+          <br />
+          ©️ 2020 Steve Joachim
         </p>
       </footer>
     </Container>

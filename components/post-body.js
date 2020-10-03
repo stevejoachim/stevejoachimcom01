@@ -8,7 +8,7 @@ export default function PostBody({ content }) {
     Prism.highlightAll()
   }, []);
   return (
-    <div className="max-w-2xl mx-auto prose md:prose-lg">
+    <div className="prose md:prose-lg">
       <div
         className={markdownStyles['markdown']}
         dangerouslySetInnerHTML={{ __html: content }}

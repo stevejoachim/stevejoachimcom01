@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import LinkButton from '../components/link-button'
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL, EMAIL } from '../lib/constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -21,11 +21,7 @@ export default function Intro() {
           Software engineer writing about the internet and machine learning
         </div>
         <div className="container text-center md:text-left">
-          <button className=" border-gray-900 border-4 hover:border-gray-700 hover:text-gray-700 font-bold py-1 my-4 px-4 rounded-lg shadow">
-            <Link href="/about">
-              <a className="">more</a>
-            </Link>
-          </button>
+          <LinkButton destination="/about" text="more" />
         </div>
         <div className="container text-center md:text-left">
           {links.map((link, index) => (

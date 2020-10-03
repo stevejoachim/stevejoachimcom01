@@ -3,10 +3,9 @@ import ErrorPage from 'next/error'
 import Layout from '../../components/layout'
 import Container from '../../components/container'
 import Head from 'next/head'
-import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import PostBody from '../../components/post-body'
-import Link from 'next/link'
+import LinkButton from '../../components/link-button'
 import { getPostById, getAllPosts } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 
@@ -22,16 +21,13 @@ export default function Post({ post }) {
         <Head>
           <title>{post.title} | Steve Joachim</title>
         </Head>
-        <article className="mb-32">
+        <article className="max-w-xl md:max-w-2xl mx-auto mb-32">
           <PostHeader title={post.title} date={post.date} />
           <PostBody content={post.content} />
+          <div>
+            <LinkButton text="back" />
+          </div>
         </article>
-        <div className="mx-auto">
-          <Link href="/">
-            <a>Go back</a>
-          </Link>
-        </div>
-
       </Container>
     </Layout>
   )

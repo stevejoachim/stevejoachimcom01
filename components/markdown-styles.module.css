@@ -1,8 +1,21 @@
 
+.markdown * {
+    border-color: black;
+}
+
 .markdown pre {
     @apply text-sm;
 }
 
 .markdown code {
-    @apply text-base bg-gray-200;
+    @apply text-base;
+    @apply bg-gray-200;
+}
+
+.markdown a {
+    @apply text-blue-900;
+}
+
+.markdown a:hover {
+    @apply text-accent-1;
 }
