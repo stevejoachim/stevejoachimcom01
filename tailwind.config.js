@@ -38,6 +38,11 @@ module.exports = {
       default: {
         css: {
           color: defaultTheme.colors.gray[900],
+          pre: false,
+          code: false,
+          'pre code': false,
+          'code::before': false,
+          'code::after': false,
         }, // customizations to typography styles go here
       },
     },

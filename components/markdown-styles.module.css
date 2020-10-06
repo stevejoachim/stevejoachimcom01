@@ -1,37 +1,32 @@
 
-.markdown * {
-    border-color: black;
-}
-
-.markdown pre {
-    color: #ebdbb2;
-    background-color: #282828;
+/* Code block styles */
+.markdown code {
     @apply text-sm;
     @apply font-mono;
+    @apply rounded-lg;
+    @apply shadow;
+    @apply bg-gray-100;
 }
 
-.markdown code {
+/* Inline code styles */
+.markdown :not(pre) > code {
     @apply text-base;
     @apply font-mono;
-    @apply font-normal;
     @apply rounded;
     @apply p-1;
-    @apply bg-gray-300;
-}
-
-/* Remove backticks that are part of tailwinds typography base style */
-.markdown code::before {
-    content: '""',
-}
-
-.markdown code::after {
-    content: '""',
+    @apply bg-gray-200;
+    @apply shadow-none;
 }
 
 .markdown a {
-    @apply text-blue-900;
+    @apply text-blue-700;
 }
 
 .markdown a:hover {
     @apply text-accent-1;
+}
+
+/* Fix fraction line display for math */
+.markdown span {
+    border-color: black;
 }
