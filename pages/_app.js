@@ -1,6 +1,6 @@
 import '../styles/index.css'
 import 'katex/dist/katex.min.css'
-import 'prismjs/themes/prism-tomorrow.css'
+import 'highlight.js/styles/gruvbox-dark.css'
 import Head from "next/head";
 import { config, dom } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;

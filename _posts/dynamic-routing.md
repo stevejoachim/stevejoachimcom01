@@ -1,7 +1,7 @@
 ---
 title: 'Dynamic Routing and Static Generation'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-date: '2020-03-16T05:35:07.322Z'
+date: '10/1/2020'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue [mauris](https://example.com) rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
@@ -20,6 +20,30 @@ Here is some inline $$a_i^3=4$$ math.
 Some `code` to write about.
 
 Lots of code.
+
+```javascript
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    <div>
+      <web-component>{block}</web-component>
+    </div>
+  )
+}
+
+export  $initHighlight;
+```
 
 ```javascript
 console.log(5)

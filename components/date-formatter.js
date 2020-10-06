@@ -1,6 +1,8 @@
-import { parseISO, format } from 'date-fns'
+import { parse, format } from 'date-fns'
 
 export default function DateFormatter({ dateString }) {
-  const date = parseISO(dateString)
-  return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>
+  const date = parse(dateString, 'M/d/yyyy', new Date())
+  const htmlDate = format(date, 'yyyy-MM-dd')
+  const displayDate = format(date, 'LLLL	d, yyyy')
+  return <time dateTime={htmlDate}>{displayDate}</time>
 }

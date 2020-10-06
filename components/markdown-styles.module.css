@@ -4,12 +4,28 @@
 }
 
 .markdown pre {
+    color: #ebdbb2;
+    background-color: #282828;
     @apply text-sm;
+    @apply font-mono;
 }
 
 .markdown code {
     @apply text-base;
-    @apply bg-gray-200;
+    @apply font-mono;
+    @apply font-normal;
+    @apply rounded;
+    @apply p-1;
+    @apply bg-gray-300;
+}
+
+/* Remove backticks that are part of tailwinds typography base style */
+.markdown code::before {
+    content: '""',
+}
+
+.markdown code::after {
+    content: '""',
 }
 
 .markdown a {

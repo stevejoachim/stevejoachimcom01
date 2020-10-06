@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import PostList from '../components/post-list'
 import Layout from '../components/layout'
 import Container from '../components/container'
@@ -7,6 +8,9 @@ export default function Writing({ allPosts }) {
   return (
     <Layout>
       <Container>
+        <Head>
+          <title>Writing | Steve Joachim</title>
+        </Head>
         <PostList posts={allPosts} />
       </Container>
     </Layout>
