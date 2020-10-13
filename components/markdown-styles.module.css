@@ -8,6 +8,11 @@
     @apply bg-gray-100;
 }
 
+.markdown pre {
+    @apply p-0;
+    @apply my-0;
+}
+
 /* Inline code styles */
 .markdown :not(pre) > code {
     @apply text-base;
