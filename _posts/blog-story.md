@@ -1,7 +1,7 @@
 ---
 title: "Blogging with React and Next.js"
 excerpt: "I've wanted to redesign stevejoachim.com for quite a while now. I've had the domain forever and put up a landing page there 5 years ago using a template from html5up. But since I left my full-time job to pursue software engineering, I knew I could do a bit better."
-date: "10/6/2020"
+date: "10/06/2020"
 ---
 
 ## 💡 Time for a Change
