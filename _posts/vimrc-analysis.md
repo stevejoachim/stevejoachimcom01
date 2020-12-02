@@ -62,7 +62,7 @@ The most popular mappings, `j` to `gj` and `k` to `gk`, make it easier to naviga
 
 The mapping of `Y` to `y$` makes `Y` work in a way that is [more consistent](https://stackoverflow.com/questions/3517057/why-does-y-do-the-same-thing-as-yy) with the `C` and `D` family of commands.
 
-It was also really common to see `<` and `>` remapped to `<gv` and `>gv` respectively. This just makes sure that if you hit the indent command in visual mode, you'll stay in visual mode with the same selection. The default behavior would be to exit visual mode. 
+It was also really common to see `<` and `>` remapped to `<gv` and `>gv` respectively. This just makes sure that if you hit the indent command in visual mode, you'll stay in visual mode with the same selection. The default behavior would be to exit visual mode.
 
 There's a popular family of four mappings that makes it easier to navigate between split panes. Typically you'd have to hit `<C-w>` followed by the `h, j, k, l` key that corresponds to the direction you want to move. A lot of people just remap these movements to `<C-h>, <C-j>, <C-k>, <C-l>` so you can move between panes more easily.
 
@@ -87,4 +87,3 @@ There are a few ways this analysis could be improved in the future. Currently, i
 In the end, this ended up being a fun way to write some code with my new Vim setup. The analysis was simple, so most of the work centered around creating and cleaning the dataset. Still, from what I've read about data science, it sounds like this is often the case even in more complex analysis projects (and especially as the size and complexity of the datasets scale up). Yet this is easily overlooked in a lot of learning scenarios where a perfect dataset is already provided. In that way, I appreciated this project as a quick way to get my feet wet with data science and to learn a bit more about some of the popular ways to configure Vim.
 
 Don't forget to check out the code on [GitHub](https://github.com/stevejoachim/vimrc-analysis) if you're interested.
-

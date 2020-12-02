@@ -18,7 +18,7 @@ export default function Intro() {
       </h1>
       <div className="text-center md:text-left mt-5 md:pl-8 text-lg">
         <div>
-          Software engineer writing about the internet and machine learning
+          Software engineer writing about the internet and web development
         </div>
         <div className="container text-center md:text-left">
           <LinkButton destination="/about" text="more" />
