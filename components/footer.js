@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="py-10 text-center">
           Made with <span className="text-xl">💻</span>.
           <br />
-          ©️ 2021 Steve Joachim
+          ©️ 2022 Steve Joachim
         </p>
       </footer>
     </Container>
